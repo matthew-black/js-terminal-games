@@ -3,7 +3,8 @@ const prompt = require('prompt-sync')();
 let numberOfGuesses = 0;
 let hasGuessedCorrectly = false;
 
-while (hasGuessedCorrectly != true) {
+// like saying "hasGuessedCorrectly DOES NOT equal true"
+while (hasGuessedCorrectly !== true) {
   clearScreen();
   
   console.log(`You've made ${numberOfGuesses} guesses!`)
